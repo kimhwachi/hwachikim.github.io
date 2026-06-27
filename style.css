@@ -1,43 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  background: white;
-  color: black;
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: #fff;
+  color: #111;
 }
 
-/* 상단 네비게이션 */
+a,
+button {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.62;
+}
+
 .nav {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
+  gap: 28px;
   padding: 30px 50px;
   font-size: 18px;
+  line-height: 1.2;
 }
 
-.nav a {
-  text-decoration: none;
-  color: black;
+.brand {
+  font-weight: 500;
 }
 
-/* Archive 드롭다운 */
+.nav-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 42px;
+}
+
+.archive {
+  position: relative;
+}
+
+.archive-toggle {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 10;
   display: none;
+  min-width: 96px;
   flex-direction: column;
-  margin-top: 10px;
+  gap: 6px;
   font-size: 16px;
+  background: #fff;
 }
 
-.dropdown a {
-  margin: 3px 0;
-}
-
-.show {
+.dropdown.show {
   display: flex;
 }
 
-/* 메인 영역 */
+.home {
+  min-height: calc(100vh - 84px);
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+
+.home h1 {
+  margin: 0;
+  font-size: clamp(38px, 8vw, 104px);
+  font-weight: 300;
+  line-height: 1;
+}
+
 .container {
-  padding: 100px 50px;
+  width: min(100%, 980px);
+  padding: 90px 50px 120px;
+}
+
+.container h1,
+.container h2 {
+  margin: 0 0 28px;
+  font-weight: 300;
+  line-height: 1.05;
+}
+
+.container h1 {
+  font-size: 48px;
+}
+
+.container h2 {
+  margin-top: 80px;
+  font-size: 34px;
+}
+
+.placeholder {
+  margin: 0;
+  font-size: 22px;
+  color: #555;
+}
+
+.video-frame {
+  width: min(100%, 900px);
+  aspect-ratio: 16 / 9;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 22px 24px;
+    font-size: 17px;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+
+  .home,
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .container {
+    padding-top: 72px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
 }
