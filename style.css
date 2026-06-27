@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: white;
+  color: black;
+}
+
+/* 상단 네비게이션 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-size: 18px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Archive 드롭다운 */
+.dropdown {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.dropdown a {
+  margin: 3px 0;
+}
+
+.show {
+  display: flex;
+}
+
+/* 메인 영역 */
+.container {
+  padding: 100px 50px;
+}
