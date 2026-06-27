@@ -1,20 +1,34 @@
- <a href="index.html">HWACHI KIM</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HWACHI KIM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">HWACHI KIM</a>
 
-    <div>
-      <a href="#" onclick="toggleArchive()">Archive</a>
-      <div id="archiveMenu" class="dropdown">
-        <a href="archive.html">Artworks</a>
-        <a href="archive.html">Projects</a>
-        <a href="archive.html">Lives</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <div class="archive">
+        <button class="archive-toggle" type="button" aria-expanded="false" aria-controls="archiveMenu">
+          Archive
+        </button>
+        <div id="archiveMenu" class="dropdown">
+          <a href="archive.html">Artworks</a>
+          <a href="archive.html#projects">Projects</a>
+          <a href="lives.html">Lives</a>
+        </div>
       </div>
-    </div>
 
-    <a href="cv.html">CV</a>
-  </div>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
 
-  <div class="container">
-    <h1></h1>
-  </div>
+  <main class="home">
+    <h1>HWACHI KIM</h1>
+  </main>
 
   <script src="script.js"></script>
 </body>
