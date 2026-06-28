@@ -81,13 +81,13 @@ body {
 }
 
 .project-item:hover img {
-  filter: blur(2px) saturate(35%);
-  opacity: 0.82;
+  filter: blur(0.8px) saturate(70%);
+  opacity: 0.9;
 }
 
 .project-item:active img {
-  filter: blur(3px) saturate(20%);
-  opacity: 0.7;
+  filter: blur(1.2px) saturate(55%);
+  opacity: 0.82;
 }
 
 @media (max-width: 640px) {
