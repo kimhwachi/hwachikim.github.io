@@ -91,13 +91,34 @@ body {
 }
 
 @media (max-width: 640px) {
+  body {
+    font-size: 13px;
+  }
+
+  .nav {
+    gap: 24px;
+    padding: 22px 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav a,
+  .nav button {
+    font-size: 13px;
+  }
+
+  .archive-wrap {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .archive-menu {
+    flex-direction: column;
+    gap: 3px;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 28px;
-    padding: 32px 24px;
+    padding: 32px 20px;
   }
-}
-.project-wide img {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
 }
