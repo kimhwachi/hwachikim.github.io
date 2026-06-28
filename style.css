@@ -98,3 +98,12 @@ body {
     padding: 32px 24px;
   }
 }
+.project-wide img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-tall img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
