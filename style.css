@@ -76,7 +76,6 @@ body {
 
 .project-item img {
   width: 100%;
-  height: auto;
   display: block;
   transition: filter 0.35s ease, opacity 0.35s ease;
 }
