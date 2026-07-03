@@ -72,6 +72,8 @@ body {
 
 .project-item {
   display: block;
+  height: fit-content;
+  line-height: 0;
 }
 
 .project-item img {
@@ -80,12 +82,12 @@ body {
   transition: filter 0.35s ease, opacity 0.35s ease;
 }
 
-.project-item:hover img {
+.project-item img:hover {
   filter: blur(0.4px);
   opacity: 0.95;
 }
 
-.project-item:active img {
+.project-item img:active {
   filter: blur(0.8px);
   opacity: 0.9;
 }
