@@ -1,7 +1,7 @@
 /* 1. 배경 애니메이션 정의 */
 @keyframes change-color {
   0%   { background-color: #d9efff; } /* 시작: 하늘색 */
-  100% { background-color: #fefcf2; } /* 끝: 버터색 */
+  100% { background-color: #fff8e1; } /* 끝: 버터색 */
 }
 
 /* 2. 전체 컨테이너 설정 */
