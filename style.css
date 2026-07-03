@@ -1,0 +1,39 @@
+/* 1. 배경 애니메이션 정의 */
+@keyframes change-color {
+  0%   { background-color: #d9efff; } /* 시작: 하늘색 */
+  100% { background-color: #fffdd0; } /* 끝: 버터색 */
+}
+
+/* 2. 전체 컨테이너 설정 */
+.terminal-wrapper {
+  animation: change-color 15s infinite alternate; /* 15초 동안 부드럽게 반복 */
+  color: #111; 
+  font-family: 'IBM Plex Mono', monospace; 
+  font-weight: 300; /* 전체 폰트 굵기 조절 */
+  display: flex; 
+  justify-content: space-between; 
+  padding: 40px; 
+  min-height: 100vh; 
+  box-sizing: border-box;
+  overflow-x: hidden; 
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+/* 3. 링크 스타일 (호버 효과 제거) */
+.terminal-wrapper a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.terminal-wrapper a:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* 4. 오른쪽 패널 설정 */
+.right-panel {
+  flex: 0 0 350px; 
+  border-left: 1px dashed #555; 
+  padding-left: 40px;
+}
