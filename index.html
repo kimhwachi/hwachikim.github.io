@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HWACHI KIM</title>
+<style>
+  /* 구글 폰트 불러오기 */
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 전체 컨테이너 설정 */
+  .terminal-wrapper {
+    background-color: #d9efff; 
+    color: #111; 
+    font-family: 'IBM Plex Mono', monospace; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+    overflow-x: hidden; 
+    line-height: 1.2;
+    font-size: 14px;
+  }
+
+  .terminal-wrapper a {
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+  .terminal-wrapper a:hover {
+    background-color: #111;
+    color: #d9efff;
+  }
+
+  .right-panel {
+    flex: 0 0 350px; 
+    border-left: 1px dashed #555; 
+    padding-left: 40px;
+  }
+</style>
+</head>
+<body>
+
+<div class="terminal-wrapper">
+
+  <!-- LEFT SIDE -->
+  <div style="flex: 1;">
+    <pre style="margin: 0;">
+<a href="/" style="font-weight: 600;">
+   __ __  _       __  ___    ______  __ __  ____      __ __  ____  __  __
+  / // / | |     / / /   |  / ____/ / // / /  _/     / //_/ /  _/ /  |/  /
+ / // /  | | /| / / / /| | / /     / // /  / /      / ,<    / /  / /|_/ / 
+/ // /   | |/ |/ / / ___ |/ /___  / __  / / /      / /| |  / /  / /  / /  
+/_//_/   |__/|__/ /_/  |_|\____/ /_/ /_/ /___/    /_/ |_/ /___/ /_/  /_/   
+</a>
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+       /\                 
+      /  \                +-------------------+
+     /____\               |   [ STRUCTURE ]   |
+    /      \              |   |||||||||||||   |
+   /________\             |   |||||||||||||   |
+  |          |            +-------------------+
+  |   ////   |                      |
+  |   ////   |              +-------+-------+
+  +----------+              |  \\\     ///  |
+                            |  \\\     ///  |
+                            +---------------+
+
+SYSTEM_STATUS: ACTIVE
+COLLISION_RATE: 98%
+</pre>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-panel">
+    <pre style="margin: 0; line-height: 1.8;">
+<b style="font-weight: 600;">[ ROOT_DIRECTORY ]</b>
+
+> <a href="/">HWACHI_KIM (Home)</a>
+
+> <details style="display: inline-block; cursor: pointer;">
+  <summary style="outline: none;">ARCHIVE_DATA</summary>
+    ├── <a href="/artworks">Artworks</a>
+    ├── <a href="/projects">Projects</a>
+    └── <a href="/lives">Lives</a>
+  </details>
+
+> <a href="/cv">CV_LOGS</a>
+
+================================
+<b style="font-weight: 600;">[ SYSTEM_LOGS / RESIDUE ]</b>
+- image.obj_01_collapsed
+- image.obj_02_kpop_ref
+- memory_leak_found
+- structure_err_ignored
+- residual_img_01
+- residual_img_02
+- collision_event_log
+================================
+    </pre>
+  </div>
+
+</div>
+
+</body>
+</html>
