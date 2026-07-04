@@ -53,23 +53,19 @@
 @keyframes infinite-slide {
   0% {
     transform: translateX(-100%); /* 왼쪽 밖에서 시작 */
-    opacity: 0;                   /* 안 보임 */
-  }
-  10% {
-    opacity: 1;                   /* 왼쪽 끝에서 나타남 */
-  }
-  90% {
-    opacity: 1;                   /* 오른쪽 끝까지 유지 */
   }
   100% {
-    transform: translateX(100vw); /* 오른쪽 밖으로 사라짐 */
-    opacity: 0;                   /* 안 보임 */
+    transform: translateX(100%);  /* 오른쪽 끝까지 이동 */
   }
 }
 
+/* 추가: 부모 영역(slide-container)에서 텍스트가 삐져나오지 않게 설정 */
+.slide-container {
+  overflow: hidden; /* 영역 밖으로 나가는 건 숨김 */
+}
+
 .slide-text {
-  /* 20초 동안 일정하게 이동 */
   animation: infinite-slide 20s linear infinite;
   display: inline-block;
-  white-space: nowrap; /* 글자가 줄바꿈되지 않게 함 */
+  white-space: nowrap;
 }
