@@ -49,13 +49,3 @@
   animation: float 4s ease-in-out infinite;
   display: inline-block; /* 애니메이션이 적용되도록 설정 */
 }
-
-@keyframes infinite-slide {
-  0% {
-    transform: translateX(-100%); /* 왼쪽 밖에서 시작 */
-  }
-  100% {
-    transform: translateX(100%);  /* 오른쪽 끝까지 이동 */
-  }
-}
-
