@@ -6,7 +6,7 @@
 
 /* 2. 전체 컨테이너 설정 */
 .terminal-wrapper {
-  animation: change-color 20s infinite alternate; /* 15초 동안 부드럽게 반복 */
+  animation: change-color 20s infinite alternate; /* 20초 동안 부드럽게 반복 */
   color: #111; 
   font-family: 'IBM Plex Mono', monospace; 
   font-weight: 300; /* 전체 폰트 굵기 조절 */
