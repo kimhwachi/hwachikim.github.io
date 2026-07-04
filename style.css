@@ -37,3 +37,15 @@
   border-left: 1px dashed #555; 
   padding-left: 40px;
 }
+
+/* 텍스트가 아주 미세하게 떠다니는 애니메이션 */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); } /* 위아래로 5px씩 움직임 */
+}
+
+/* 움직임을 적용할 클래스 정의 */
+.floating-text {
+  animation: float 4s ease-in-out infinite;
+  display: inline-block; /* 애니메이션이 적용되도록 설정 */
+}
