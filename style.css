@@ -59,13 +59,3 @@
   }
 }
 
-/* 추가: 부모 영역(slide-container)에서 텍스트가 삐져나오지 않게 설정 */
-.slide-container {
-  overflow: hidden; /* 영역 밖으로 나가는 건 숨김 */
-}
-
-.slide-text {
-  animation: infinite-slide 20s linear infinite;
-  display: inline-block;
-  white-space: nowrap;
-}
