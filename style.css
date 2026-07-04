@@ -49,17 +49,3 @@
   border-left: 1px dashed #555; 
   padding-left: 40px;
 }
-
-.x-logo-original {
-  font-family: monospace; /* 고정폭 글꼴로 형태 유지 */
-  font-size: 10px;         /* 작고 밀도 있게 설정 */
-  line-height: 0.8;       /* 줄 간격을 매우 좁게 하여 꽉 찬 모양 구현 */
-  margin-top: 25px;
-  color: #111;
-  letter-spacing: 0;
-  font-weight: bold;      /* 굵게 설정하여 존재감 강조 */
-}
-
-.x-logo-original pre {
-  margin: 0;              /* pre 태그의 기본 여백 제거 */
-}
