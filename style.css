@@ -50,29 +50,3 @@
   padding-left: 40px;
 }
 
-/* 1. 도트 배경 레이어 설정 */
-.background-dot-art {
-  position: fixed;       /* 화면에 딱 고정 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -999;         /* 가장 뒤쪽으로 밀어버림 */
-  margin: 0;
-  padding: 0;
-  
-  font-family: 'Courier New', monospace;
-  font-size: 5px;        /* 너무 크면 화면을 다 가리니 작게 조절 */
-  line-height: 5px;
-  color: #aaccff;        /* 배경색보다 약간 진한 색 */
-  pointer-events: none;  /* 클릭 무시 */
-  overflow: hidden;
-}
-
-/* 2. 본문 컨테이너 설정 */
-.terminal-wrapper {
-  position: relative;    /* 배경 위에 떠 있게 설정 */
-  z-index: 1;            /* 배경보다 앞쪽 */
-  background-color: transparent; /* 배경이 비치도록 투명하게 */
-  min-height: 100vh;
-}
