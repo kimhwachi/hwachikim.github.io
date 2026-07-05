@@ -1,19 +1,1 @@
-/* 목록 페이지의 사진 스타일 */
-.thumbnail-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3열 정렬 */
-  gap: 20px;
-}
 
-.thumb img {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* 정사각형으로 딱 맞춰서 깔끔하게 */
-  object-fit: cover;
-}
-
-/* 상세 페이지의 컨텐츠 스타일 */
-.project-detail {
-  max-width: 800px; /* 너무 퍼지지 않게 폭 제한 */
-  margin: 0 auto;   /* 가운데 정렬 */
-  padding: 50px;
-}
