@@ -23,12 +23,12 @@
     font-weight: 200;
     display: flex; 
     justify-content: space-between; 
-    padding: 40px; 
+    padding: 20px 40px 40px 40px;
     min-height: 100vh; 
     box-sizing: border-box;
     overflow-x: hidden; 
     line-height: 1.2;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .terminal-wrapper a {
@@ -46,23 +46,29 @@
     border-left: 1px dashed #555; 
     padding-left: 40px;
   }
+  /* 돼지 애니메이션 */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .floating-text {
+      animation: float 4s ease-in-out infinite;
+      display: inline-block;
+    }
 </style>
 </head>
 <body>
 
 <div class="terminal-wrapper">
 
-  <!-- LEFT SIDE -->
   <div style="flex: 1;">
     <pre style="margin: 0;">
-<a href="/" style="font-weight: 600;">
   _     _     _     _                                       
  / \   / \   / \   / \                       +---        +-- -+       --         .                       -+          --'-{@
 |   | |   | |   | |  |
  \_/   \_/   \_/   \_/  
   @}-'--    @}-'--  
-<pre>
-  <span class="floating-text">                     
+<span class="floating-text">                   
                                  @}-'                               @}-'--            
                ( ^(oo)^ )        ( ^(oo)^ )
               /      \          /      \
@@ -70,8 +76,10 @@
                 /\                @                                                      .
                /  \             @}-'--
               /____\   ..
+</span>
                                        
-  </span> </pre>
+    </pre>
+    <pre style="margin: 0;">
                                                                                                         --'-{@
     .                                       ##       
           .                              /####                                              @}-'--  
