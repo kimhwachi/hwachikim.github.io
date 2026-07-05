@@ -49,3 +49,22 @@
   border-left: 1px dashed #555; 
   padding-left: 40px;
 }
+
+/* 배경용 도트 아트 스타일 */
+.background-dot-art {
+  position: fixed;       /* 화면에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;           /* 무조건 본문보다 뒤로 */
+  margin: 0;
+  padding: 50px;         /* 도트 아트가 화면 가장자리에 너무 붙지 않게 */
+  
+  font-family: 'Courier New', monospace;
+  font-size: 6px;        /* 아트가 너무 크다면 이 수치를 조정하세요 */
+  line-height: 6px;
+  color: #cce7fa;        /* 배경색보다 아주 살짝 진한 파란색으로 하면 고급스럽습니다 */
+  pointer-events: none;  /* 도트 아트 위로 마우스가 통과되게 (링크 클릭 가능) */
+  overflow: hidden;      /* 삐져나오는 부분 자름 */
+}
