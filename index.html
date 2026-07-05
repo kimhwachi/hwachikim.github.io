@@ -22,7 +22,14 @@
   .terminal-wrapper {
     background-color: #d9efff; 
     color: #111; 
-    font-family: 'IBM Plex Mono', monospace; 
+font-family: 'Courier New', Courier, monospace; 
+  /* ... 나머지 동일 ... */
+}
+
+/* 하지만 아스키 아트가 담긴 <pre> 태그만은 IBM Plex Mono를 강제합니다 */
+pre {
+  font-family: 'IBM Plex Mono', monospace !important;
+}
     font-weight: 200;
     display: flex; 
     justify-content: space-between; 
