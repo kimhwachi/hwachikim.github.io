@@ -2,30 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css"> 
-  <link rel="stylesheet" href="project-detail.css">
-  <title>Project Detail | HWACHI KIM</title>
+  <link rel="stylesheet" href="style.css"> <title>PROJECTS | HWACHI KIM</title>
+  <style>
+    /* 상단 메뉴: 화면을 4등분하여 텍스트 중앙 배치 */
+    .project-nav {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px; /* 상단 여백 20px */
+      margin-bottom: 60px;
+    }
+    .project-nav a {
+      width: 25%; /* 4등분 */
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* 사진 규격: 4cm x 6cm (웹에서는 약 150px x 225px) */
+    .thumbnail-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 0 40px;
+    }
+    .thumb {
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .thumb img {
+      width: 150px;  /* 4cm */
+      height: 225px; /* 6cm */
+      object-fit: cover;
+      border: 1px solid #111;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+  </style>
 </head>
 <body>
-  <div class="project-content">
-     </div>
+
+<div class="terminal-wrapper">
+  <div style="width: 100%;">
+    
+    <nav class="project-nav">
+      <a href="#branding">BRANDING</a>
+      <a href="#web">WEB</a>
+      <a href="#art">ART</a>
+      <a href="#etc">ETC</a>
+    </nav>
+
+    <div class="thumbnail-grid">
+      <a href="detail-01.html" class="thumb">
+        <img src="images/thumb1.jpg" alt="프로젝트 1">
+        <span>PROJECT 01</span>
+      </a>
+      <a href="detail-02.html" class="thumb">
+        <img src="images/thumb2.jpg" alt="프로젝트 2">
+        <span>PROJECT 02</span>
+      </a>
+      </div>
+
+  </div>
+</div>
+
 </body>
 </html>
-
-<nav class="project-nav">
-  <a href="#branding">Branding</a> | 
-  <a href="#web">Web</a> | 
-  <a href="#art">Art</a>
-</nav>
-
-<div class="thumbnail-grid">
-  <a href="detail-01.html" class="thumb">
-    <img src="images/thumb-01.jpg" alt="프로젝트 1">
-    <span>프로젝트 이름 1</span>
-  </a>
-  
-  <a href="detail-02.html" class="thumb">
-    <img src="images/thumb-02.jpg" alt="프로젝트 2">
-    <span>프로젝트 이름 2</span>
-  </a>
-</div>
